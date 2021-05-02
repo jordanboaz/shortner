@@ -10,7 +10,7 @@ Main Functionalities:
   4. Optimal layout for the site depending on their device's screen size
 
 ## Demo
-Check out a live demo on this [link]().
+Check out a live demo on this [link](https://shortner-chi.vercel.app/).
   
 ## Tech used
 
