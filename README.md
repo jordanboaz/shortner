@@ -1,34 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Shortner 
 
-## Getting Started
+Responsive application to shorten urls integrate with the [shrtcode API](https://app.shrtco.de/docs) 
 
-First, run the development server:
+Main Functionalities: 
+  
+  1. Shorten a link
+  2. See a list of their shortened links, even after refreshing the browser
+  3. Copy the shortened link to their clipboard in a single click 
+  4. Optimal layout for the site depending on their device's screen size
 
-```bash
-npm run dev
-# or
-yarn dev
+## Demo
+Check out a live demo on this [link]().
+  
+## Tech used
+
+### React
+  -React was used on version `17.0.2`
+
+### TypeScript
+
+- The app is build using [Typescript](https://www.typescriptlang.org/), it grants bring static typing for javascript, granting us the ability to use the intelisense for our code editor, facilitates the refactoring of code, saves us debuging time and brings more assertiveness when accessing properties of our variables.
+- Interfaces were created with payload responsed from the API, so the whole application is aware of it's data structure.
+
+### NextJS
+- NextJS is a framework built on top of React that is fast and efficient.
+
+### Main libs:
+
+- [axios](https://github.com/axios/axios) for api access.
+- [styled-components](https://styled-components.com/) to simplify separation between code and stylesheets.
+- [jest](https:/jestjs.io/) as a test runner. 
+  
+### Code quality
+
+To ensure the code follow the some pattern and is correctly typed, some libs were used:
+
+- [prettier](https://prettier.io/) for code formatting.
+
+
+#### Componentization of reusable code
+
+UI components, like headers, footers, lists were created to avoid code duplication. The components were create to be completely reusable and they do not contain any business logic.
+
+#### Separation of concerns
+
+- For this simple application, we use ContextAPI. It provides us a way to create a separation between UI components and business logic and state.
+
+
+## Screenshots
+#### Desktop Screens
+   
+<img src="https://github.com/jordanboaz/shortner/blob/main/public/screenshots/desktop1.png" height="600px" width="1080px" /><img src="https://github.com/jordanboaz/shortner/blob/main/public/screenshots/desktop2.png" height="600px" width="1080px" />
+<img src="https://github.com/jordanboaz/shortner/blob/main/public/screenshots/desktop3.png" height="600px" width="1080px" /><img src="https://github.com/jordanboaz/shortner/blob/main/public/screenshots/desktop4.png" height="600px" width="1080px" />
+
+#### Mobile Screens
+<img src="https://github.com/jordanboaz/shortner/blob/main/public/screenshots/mobile1.png" height="600px" width="340px" />    <img src="https://github.com/jordanboaz/shortner/blob/main/public/screenshots/mobile2.png" height="600px" width="340px" />
+
+
+<img src="https://github.com/jordanboaz/shortner/blob/main/public/screenshots/mobile3.png" height="600px" width="340px" />    <img src="https://github.com/jordanboaz/shortner/blob/main/public/screenshots/mobile4.png" height="600px" width="340px" />
+
+
+## Run the project
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+yarn && yarn dev
+```
